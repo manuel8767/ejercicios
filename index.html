@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Patrones</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-image: url('zips/Cover.jpg'); 
+      background-size: cover;       
+      background-position: center;  
+      background-repeat: no-repeat; 
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 155px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 20px;
+      color: #f0f0f0;
+      margin-bottom: 10px;
+      font-size: 50px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .dropdown {
+      position: relative;
+      margin: 0 50px;
+      text-align: center;
+    }
+
+    .dropbtn {
+      background-color: #333;
+      color: white;
+      padding: 14px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .dropbtn:hover {
+      background-color: #555;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      left: 50%;              
+      transform: translateX(-50%);  
+      background-color: #444;
+      min-width: 150px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+      z-index: 1;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      border-bottom: 1px solid #666;
+      text-align: center; text-align: center;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #666;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Patrones</h1>
+
+  <nav>
+    <!-- Patrones de Creación -->
+    <div class="dropdown">
+      <button class="dropbtn">Patrones de Creación</button>
+      <div class="dropdown-content">
+        <a href="zips/creacion/Abstract_Factory.zip" download>Abstract Factory</a>
+        <a href="zips/creacion/Builder.zip" download>Builder</a>
+        <a href="zips/creacion/Factory_Method.zip" download>Factory Method</a>
+        <a href="zips/creacion/Prototype.zip" download>Prototype</a>
+        <a href="zips/creacion/Singleton.zip" download>Singleton</a>
+      </div>
+    </div>
+
+    <!-- Patrones de Comportamiento -->
+    <div class="dropdown">
+      <button class="dropbtn">Patrones de Comportamiento</button>
+      <div class="dropdown-content">
+        <a href="zips/estructurales/Chain_of_Responsability.zip" download>Chain of Responsability</a>
+        <a href="zips/comportamiento/Command.zip" download>Command</a>
+        <a href="zips/comportamiento/Iterator.zip" download>Iterator</a>
+        <a href="zips/comportamiento/Mediator.zip" download>Mediator</a>
+        <a href="zips/comportamiento/Memento.zip" download>Memento</a>
+        <a href="zips/estructurales/Observer.zip" download>Observer</a>
+        <a href="zips/comportamiento/State.zip" download>State</a>
+        <a href="zips/estructurales/Strategy.zip" download>Strategy</a>
+        <a href="zips/comportamiento/Template_Method.zip" download>Template Method</a>
+        <a href="zips/comportamiento/Visitor.zip" download>Visitor</a>
+      </div>
+    </div>
+
+    <!-- Patrones Estructurales -->
+    <div class="dropdown">
+      <button class="dropbtn">Patrones Estructurales</button>
+      <div class="dropdown-content">
+        <a href="zips/estructurales/Adapter.zip" download>Adapter</a>
+        <a href="zips/estructurales/Bridge.zip" download>Bridge</a>
+        <a href="zips/estructurales/Composite.zip" download>Composite</a>
+        <a href="zips/estructurales/Decorator.zip" download>Decorator</a>
+        <a href="zips/estructurales/Facade.zip" download>Facade</a>
+        <a href="zips/estructurales/Flyweight.zip" download>Flyweight</a>
+        <a href="zips/estructurales/Proxy.zip" download>Proxy</a>
+      </div>
+    </div>
+  </nav>
+
+</body>
+</html>
